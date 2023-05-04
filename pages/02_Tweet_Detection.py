@@ -149,8 +149,8 @@ def show_output(text):
     return None
 
 
-vectorizer = pickle.load(open('/Users/niharkondam/Projects/disaster_tweets/vectorizer_model.pkl', 'rb'))
-lr_model = pickle.load(open('/Users/niharkondam/Projects/disaster_tweets/lr_model1.pkl', 'rb'))
+vectorizer = pickle.load(open('data/vectorizer_model1.pkl', 'rb'))
+lr_model = pickle.load(open('data/lr_model1.pkl', 'rb'))
 
 st.image('/Users/niharkondam/Downloads/nlp1-cover.jpg')
 st.header('Disaster Tweet Detection')
