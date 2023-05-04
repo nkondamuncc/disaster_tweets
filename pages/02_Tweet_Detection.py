@@ -152,7 +152,7 @@ def show_output(text):
 vectorizer = pickle.load(open('data/vectorizer_model1.pkl', 'rb'))
 lr_model = pickle.load(open('data/lr_model1.pkl', 'rb'))
 
-st.image('/Users/niharkondam/Downloads/nlp1-cover.jpg')
+st.image('data/nlp1-cover.jpg')
 st.header('Disaster Tweet Detection')
 
 text = st.text_input('Type your tweet here:', placeholder="I can't belive my backyard is on fire🔥😱. "
