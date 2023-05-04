@@ -1,4 +1,6 @@
 import streamlit as st
+import nltk
+nltk.donwload('all')
 st.set_page_config(
         page_title="Disaster Tweets",
 )
