@@ -37,16 +37,16 @@ def load_data():
         dtext = " ".join([dword for dword in dwords if len(dword)>3])
     
     subsets = {
-    "All Tweets": [text,'Blues'],
-    "Disaster Tweets": [dtext,'Reds'],
-    "Non-Disaster Tweets": [gtext,'Greens'],
+    "All Tweets": [text,'#OF292F'],
+    "Disaster Tweets": [dtext,'#CB2D6F'],
+    "Non-Disaster Tweets": [gtext,'#14A098'],
     }
     return subsets
 
 def show_wc(text,cmap):
     bc = st.get_option('theme.backgroundColor')
     mask = np.array(Image.open(r'data/10wmt-superJumbo-v4.jpg'))
-    wordcloud = WordCloud( max_font_size=200,width=2000, height=1000,max_words=150,collocations=False,stopwords=stop_words,background_color='#002b36', colormap=cmap, mask=mask).generate(text)
+    wordcloud = WordCloud( max_font_size=200,width=2000, height=1000,max_words=150,collocations=False,stopwords=stop_words,background_color='#СССССС', colormap=cmap, mask=mask).generate(text)
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.show()
