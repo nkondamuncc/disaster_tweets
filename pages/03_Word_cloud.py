@@ -37,9 +37,9 @@ def load_data():
         dtext = " ".join([dword for dword in dwords if len(dword)>3])
     
     subsets = {
-    "All Tweets": [text,'#OF292F'],
-    "Disaster Tweets": [dtext,'#CB2D6F'],
-    "Non-Disaster Tweets": [gtext,'#14A098'],
+    "All Tweets": [text,'Blues'],
+    "Disaster Tweets": [dtext,'Reds'],
+    "Non-Disaster Tweets": [gtext,'Greens'],
     }
     return subsets
 
