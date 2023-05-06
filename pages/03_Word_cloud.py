@@ -46,7 +46,7 @@ def load_data():
 def show_wc(text,cmap):
     bc = st.get_option('theme.backgroundColor')
     mask = np.array(Image.open(r'data/10wmt-superJumbo-v4.jpg'))
-    wordcloud = WordCloud( max_font_size=200,width=2000, height=1000,max_words=150,collocations=False,stopwords=stop_words,background_color='#СССССС', colormap=cmap, mask=mask).generate(text)
+    wordcloud = WordCloud( max_font_size=200,width=2000, height=1000,max_words=150,collocations=False,stopwords=stop_words,background_color='#EAE7DC', colormap=cmap, mask=mask).generate(text)
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.show()
